@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width" />
+  <meta name="description" content="Superweb" />
+  <meta name="color-scheme" content="only light" />
+  <title>Octanonacontane Web</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <hgroup>
+      <h1 class="title">Octanonacontane Web</h1>
+      <p>Make a beautiful website.</p>
+    </hgroup>
+    <div class="end">
+      <button id="mainopener" class="opener" type="button" data-open-target="#mainsidebar">Open&nbsp;Menu</button>
+    </div>
+  </header>
+  <main>
+    <h2>Weblog for Everybody</h2>
+    <article>
+      <p>Hello! We serve you free environments for blogs. With our service, you can make blogs from templates or your own style.</p>
+      <p>We believe in a generally-opened Web. We started this service for the sake of completing this belief; therefore, whoever has registered service account are allowed to make your blogs.</p>
+    </article>
+    <a href="https://www.hankyu.co.jp/kyotrain-garaku/en" target="_blank"><img src="img/garaku-banner-sp.jpg" alt="京とれいん 雅洛" lang="ja" /></a>
+    <h2>Get Started</h2>
+    <article>
+      <p>You can start using this blog service only in 3 steps:</p>
+      <ol class="ol-common">
+        <li>
+          Telling us your personal data from <a href="#form3" title="Registration form">this form</a>
+        </li>
+        <li>
+          Setting your username at the form
+        </li>
+        <li>
+          Agreeing with our using terms
+        </li>
+      </ol>
+    </article>
+    <form id="form3">
+      <div class="validation-group">
+        <label for="t">Your Name</label>
+        <input required id="t" name="username" pattern="^[A-Z][a-z]+ [A-Z][a-z]+( [A-Z][a-z]+)?$" />
+        <div class="validation-message invalid-message">Required form!</div>
+        <div class="validation-message valid-message">Looks Nice!</div>
+      </div>
+      <div class="validation-group">
+        <label for="psw">Set your password</label>
+        <input id="psw" name="password" type="password" required pattern="^(?=.*[A-Za-z0-9¥$\\\|^/.,?!@#])[A-Za-z0-9¥$\\\|^/.,?!@#]{16,64}$" />
+        <div class="validation-message invalid-message">Enter a safe password</div>
+        <div class="validation-message valid-message">Looks Nice!</div>
+      </div>
+      <div class="validation-group">
+        <label for="em">Your Email Address</label>
+        <input type="email" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2}$" placeholder="ccTLD Only" inputmode="email" id="em" required />
+        <div class="validation-message invalid-message">Email is required!</div>
+        <div class="validation-message valid-message">Looks Nice!</div>
+      </div>
+      <div class="validation-group">
+        <label for="tel">Telephone Number</label>
+        <input type="tel" id="tel" name="phone" required pattern="^\+[0-9]{2}[0-9]+$" placeholder="Country Code is required" />
+        <div class="validation-message invalid-message">Enter Correct and full telephone number!</div>
+        <div class="validation-message valid-message">Looks Nice!</div>
+      </div>
+      <button>Submit!</button>
+    </form>
+  </main>
+  <!--Navigation Bar for sidebar-->
+  <nav class="sidebar" id="mainsidebar">
+    <div class="sidebar-head">
+      <!--Title-->
+      <h3>On this page....</h3>
+      <!--Close Button-->
+      <button
+        type=
+          "button"
+        class=
+          "closeswitch"
+        data-close-target=
+          "#mainsidebar"
+        data-action-func=
+          "toggleClose"
+      >Close this Menu</button>
+    </div>
+    <ol id="autoindex" class="index"><!--Create index with JavaScript--><!--Default--><li><a href="#form3">Let’s sign in!</a></li><!--/Default--></ol>
+  </nav>
+  <script src="img/jquery.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
