@@ -1,0 +1,223 @@
+/* Style of whole page  */
+body {
+  font: 12pt/1.25 -apple-system-ui-serif, 'Times New Roman', Roman, serif;
+  color: #000;
+  background-color: #fff;
+  overflow: scroll;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong,
+b {
+  font-family: -apple-system, arial, sans-serif;
+  font-weight: bold;
+}
+
+button {
+  font-family: 'American Typewriter', Century, serif;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.75em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+h4 {
+  font-size: 1.25em;
+}
+
+h5 {
+  font-size: 1em;
+}
+
+h6 {
+  font-size: 0.75em;
+}
+
+.title {
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+  font-size: 250%;
+}
+
+p {
+  text-indent: 2ex;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+}
+
+.sidebar {
+  height: 100%;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+}
+
+.sidebar ol {
+  list-style-type: none;
+}
+
+hgroup {
+  font-style: italic;
+  padding-left: 10%;
+}
+
+#mainopener {
+  position: sticky;
+  top: 0; left: 0;
+}
+
+hgroup *:first-child {
+  font-style: normal;
+  width: 110%;
+  position: relative;
+  left: -10%;
+}
+
+hgroup :nth-child(n+1) {
+  margin-left: auto;
+}
+
+button[type=button] {
+  color: #ded5c0;
+  background-color: #451722;
+  height: 1.5em;
+  border: none;
+  border-radius: 2px;
+}
+
+.end {
+  text-align: right;
+}
+
+.sidebar-head * {
+  flex: auto;
+}
+.sidebar-head .closeswitch {
+  font-size: 110%;
+  padding: auto;
+  box-sizing: border-box;
+  flex: inital;
+  height: auto;
+}
+
+.sidebar-head {
+  display: flex;
+  flex-direction: row;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+header {
+  position: sticky;
+  top: 0; left: 0;
+  background-color: #fff;
+}
+
+a:any-link {
+  text-decoration: none;
+}
+
+a:link {
+  color: #8F0E36;
+}
+
+a:visited {
+  color: #2e2f2f;
+  background-color: #ef5a11;
+}
+
+.index {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.index li:nth-child(even) {
+  background-color: #ef810f;
+}
+
+.ol-common {
+  list-style-type: decimal;
+}
+
+input[type=text],
+input[type=password],
+input[type=url],
+input[type=number],
+input[type=email],
+input[type=tel],
+input:not([type]),
+select,
+textarea {
+  display: block;
+  box-sizing: border-box;
+  height: 2em;
+  width: 100%;
+  background-color: #fff;
+  font-family: 'American Typewriter', 'Courier New', Courier, monospace;
+  border: 3px solid gray;
+  border-radius: 5px;
+}
+
+textarea {
+  height: 3.75em;
+}
+
+input:required:invalid {
+  background: linear-gradient(to right, #fff,#fcc);
+}
+
+input:required:valid {
+  background: linear-gradient(to right, #fff, #92FF05);
+}
+
+button:not([type]),
+button[type=submit],
+input[type=submit] {
+  color: #451722;
+  background-color: #ded5c0;
+  height: 1.5em;
+  border: 2px solid #451722;
+  border-radius: 2px;
+}
+
+.validation-message {
+  display: none;
+}
+
+.invalid-message {
+  color: #f00;
+}
+
+.valid-message {
+  color: #84C72E;
+}
+
+.validation-group:has(> :invalid) .invalid-message {
+  display: block;
+}
+
+.validation-group:has(> :valid) .valid-message {
+  display: block;
+}
+
