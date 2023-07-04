@@ -1,0 +1,58 @@
+{
+  "jquery": {
+    "name": "jQuery",
+    "type": "typedef",
+    "properties": {
+      "$": {
+        "type": "function",
+        "returns": "jQuery",
+        "parameters": [
+          {
+            "name": "selector",
+            "type": "string"
+          }
+        ]
+      },
+      "ajax": {
+        "type": "function",
+        "returns": "jqXHR",
+        "parameters": [
+          {
+            "name": "url",
+            "type": "string"
+          },
+          {
+            "name": "settings",
+            "type": "Object"
+          }
+        ]
+      },
+      "each": {
+        "type": "function",
+        "returns": "jQuery",
+        "parameters": [
+          {
+            "name": "collection",
+            "type": "Array|Object",
+            "optional": true
+          },
+          {
+            "name": "callback",
+            "type": "function"
+          }
+        ]
+      },
+      "ready": {
+        "type": "function",
+        "returns": "jQuery",
+        "parameters": [
+          {
+            "name": "callback",
+            "type": "function"
+          }
+        ]
+      },
+      // 他のjQuery関数やプロパティをここに追加します
+    }
+  }
+}
